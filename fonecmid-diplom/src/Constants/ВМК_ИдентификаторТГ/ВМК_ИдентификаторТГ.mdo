@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="42e6332f-10a3-41ad-928f-b5042340d5aa">
+  <producedTypes>
+    <managerType typeId="301bf154-c34b-40f6-9ab9-b81d0432aaa7" valueTypeId="44cb5a40-91d0-4cab-a31c-8446b2f902e2"/>
+    <valueManagerType typeId="ac35e098-3a37-407f-882e-fd3d80ee9421" valueTypeId="cf9332b5-0fae-4afd-ac94-d24e89b88c8a"/>
+    <valueKeyType typeId="4c90f495-50a4-400a-9513-fb798499021d" valueTypeId="560c86b1-e374-480d-8f53-6f511110723d"/>
+  </producedTypes>
+  <name>ВМК_ИдентификаторТГ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Идентификатор телеграмм-бота</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>250</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

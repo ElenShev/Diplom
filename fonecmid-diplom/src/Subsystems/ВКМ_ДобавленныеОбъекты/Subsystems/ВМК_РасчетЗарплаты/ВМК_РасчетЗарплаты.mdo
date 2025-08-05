@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="08fd5e8a-b834-4a11-bbf9-34b43b5d2c4e">
+  <name>ВМК_РасчетЗарплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет зарплаты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ВМК_ФизическиеЛица</content>
+  <content>Document.ВМК_НачислениеЗаработнойПлаты</content>
+  <content>Document.ВМК_НачислениеФиксированныхПремий</content>
+  <content>Document.ВМК_ВыплатаЗарплаты</content>
+  <content>Document.ВМК_ГрафикОтпусков</content>
+  <content>InformationRegister.ВМК_ГрафикРаботы</content>
+  <content>InformationRegister.ВМК_УсловияОплатыСотрудников</content>
+  <content>ChartOfCalculationTypes.ВМК_ОсновныеНачисления</content>
+  <content>ChartOfCalculationTypes.ВМК_ДополнительныеНачисления</content>
+  <content>ChartOfCalculationTypes.ВМК_Удержания</content>
+  <content>AccumulationRegister.ВМК_ВыполненныеКлиентуРаботы</content>
+  <content>AccumulationRegister.ВМК_ВыполненныеСотрудникомРаботы</content>
+  <content>AccumulationRegister.ВМК_ВзаиморасчетыССотрудниками</content>
+  <content>CalculationRegister.ВМК_ОсновныеНачисления</content>
+  <content>CalculationRegister.ВМК_ДополнительныеНачисления</content>
+  <content>CalculationRegister.ВМК_Удержания</content>
+  <parentSubsystem>Subsystem.ВКМ_ДобавленныеОбъекты</parentSubsystem>
+</mdclass:Subsystem>

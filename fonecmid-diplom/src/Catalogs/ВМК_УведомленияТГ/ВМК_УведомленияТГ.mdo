@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="00e063ed-d6c3-4213-980c-99fddcbbdffc">
+  <producedTypes>
+    <objectType typeId="190f866f-951f-4b95-a090-f7e4267b5870" valueTypeId="78ff6969-883e-491d-b2c1-d2bdecbbcc15"/>
+    <refType typeId="573eed61-f1de-47d4-88f2-eb24c8917923" valueTypeId="fdef12d6-810c-4a54-a0d4-f721cc65aee6"/>
+    <selectionType typeId="9bb54c48-bc16-4718-b300-9391463b4295" valueTypeId="e8a4645b-b7a6-4d6a-8dc3-5b1f61e59b31"/>
+    <listType typeId="75ad186c-6b7e-43df-9654-2408ea3e8883" valueTypeId="d0873686-3bd4-4ec9-bb0f-8214e71e5e5f"/>
+    <managerType typeId="4bef6603-d4ab-447a-bf98-70c53b08a34d" valueTypeId="092385c6-5340-4fda-b400-25e8a5317f5c"/>
+  </producedTypes>
+  <name>ВМК_УведомленияТГ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уведомления телеграмм-боту</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="520ce65b-45f0-44e5-8c58-6d49550e2021">
+    <name>Текст_Сообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст сообщения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

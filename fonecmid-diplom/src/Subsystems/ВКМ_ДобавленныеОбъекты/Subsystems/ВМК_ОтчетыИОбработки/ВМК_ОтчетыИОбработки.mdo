@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b721eacb-be54-4471-8d27-caae99bd19b7">
+  <name>ВМК_ОтчетыИОбработки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчеты и обработки</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Report.ВМК_ВыработкаСпециалистов</content>
+  <content>Report.ВМК_РасходЗапланированныхОтпусков</content>
+  <content>Report.ВМК_РасчетыССотрудниками</content>
+  <content>Report.ВМК_АнализВыставленныхАктов</content>
+  <content>Role.ВМК_ОтчетПоАнализуАктов</content>
+  <content>Role.ВМК_ОтчетВыработкаСпециалистов</content>
+  <content>Role.ВМК_ОтчетыПоЗарплатеОтпускам</content>
+  <parentSubsystem>Subsystem.ВКМ_ДобавленныеОбъекты</parentSubsystem>
+</mdclass:Subsystem>

@@ -199,6 +199,13 @@
         <value></value>
       </code>
     </items>
+    <items id="6da8532b-b65a-4640-bcfe-ec12b20cd59a">
+      <name>УдалитьСправочник_ДоговорыКонтрагентов</name>
+      <description>Договоры контрагентов</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
   </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>

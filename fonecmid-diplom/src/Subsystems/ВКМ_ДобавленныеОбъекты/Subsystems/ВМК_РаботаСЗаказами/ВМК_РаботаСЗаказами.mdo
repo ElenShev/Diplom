@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5eb2a62b-a96e-4ec7-bfe3-4a2cd4922c6d">
+  <name>ВМК_РаботаСЗаказами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с заказами</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ВМК_ОбслуживаниеКлиентаПрисоединенныеФайлы</content>
+  <content>Catalog.ВМК_УведомленияТГ</content>
+  <content>Document.РеализацияТоваровУслуг</content>
+  <content>Document.ВМК_ОбслуживаниеКлиента</content>
+  <content>AccumulationRegister.ВМК_ВыполненныеКлиентуРаботы</content>
+  <parentSubsystem>Subsystem.ВКМ_ДобавленныеОбъекты</parentSubsystem>
+</mdclass:Subsystem>

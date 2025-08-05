@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8a51613c-93b8-47f0-92d1-b8e1810209e7">
+  <producedTypes>
+    <refType typeId="444cd1c8-4680-4202-bd4d-c0768c607bed" valueTypeId="a25fa1fa-ac6a-4e70-894b-a5d92b2907ea"/>
+    <listType typeId="206eeb02-3a40-4d6c-889e-cf86056c583a" valueTypeId="83c0a93d-84d8-4fcb-86bd-6d4a63eb5f38"/>
+    <managerType typeId="78551e04-835f-4cfe-b243-37bc551beabf" valueTypeId="4510cc22-4482-46b2-84b5-681f5439c51e"/>
+  </producedTypes>
+  <name>ВМК_ВидОтпуска</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид отпуска</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="2e5c79c7-ece2-468c-8877-82b041cd6eb7">
+    <name>План</name>
+    <synonym>
+      <key>ru</key>
+      <value>План</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2fb18c39-cf6c-4c8f-8163-312aadb44858">
+    <name>Факт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Факт</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
