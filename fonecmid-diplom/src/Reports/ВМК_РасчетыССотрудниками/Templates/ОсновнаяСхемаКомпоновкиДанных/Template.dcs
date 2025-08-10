@@ -66,15 +66,13 @@
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	ВМК_ВзаиморасчетыССотрудникамиОстаткиИОбороты.Сотрудник КАК Сотрудник,
-	СУММА(ЕСТЬNULL(ВМК_ВзаиморасчетыССотрудникамиОстаткиИОбороты.СуммаНачальныйОстаток, 0)) КАК
-		ЗадолженностьНаНачалоПериода,
+	СУММА(ЕСТЬNULL(ВМК_ВзаиморасчетыССотрудникамиОстаткиИОбороты.СуммаНачальныйОстаток, 0)) КАК ЗадолженностьНаНачалоПериода,
 	СУММА(ЕСТЬNULL(ВМК_ВзаиморасчетыССотрудникамиОстаткиИОбороты.СуммаПриход, 0)) КАК НачисленноКВыплате,
 	СУММА(ЕСТЬNULL(ВМК_ВзаиморасчетыССотрудникамиОстаткиИОбороты.СуммаРасход, 0)) КАК Выплачено,
-	СУММА(ЕСТЬNULL(ВМК_ВзаиморасчетыССотрудникамиОстаткиИОбороты.СуммаКонечныйОстаток, 0)) КАК
-		ЗадолженностьНаКонецПериода
+	СУММА(ЕСТЬNULL(ВМК_ВзаиморасчетыССотрудникамиОстаткиИОбороты.СуммаКонечныйОстаток, 0)) КАК ЗадолженностьНаКонецПериода
 ИЗ
-	РегистрНакопления.ВМК_ВзаиморасчетыССотрудниками.ОстаткиИОбороты(&amp;НачалоПериода, &amp;КонецПериода,,,) КАК
-		ВМК_ВзаиморасчетыССотрудникамиОстаткиИОбороты
+	РегистрНакопления.ВМК_ВзаиморасчетыССотрудниками.ОстаткиИОбороты КАК ВМК_ВзаиморасчетыССотрудникамиОстаткиИОбороты
+
 СГРУППИРОВАТЬ ПО
 	ВМК_ВзаиморасчетыССотрудникамиОстаткиИОбороты.Сотрудник</query>
 	</dataSet>
@@ -92,6 +90,7 @@
 				<v8:DateFractions>DateTime</v8:DateFractions>
 			</v8:DateQualifiers>
 		</valueType>
+		<value xsi:nil="true"/>
 		<useRestriction>true</useRestriction>
 		<expression>&amp;Период.ДатаНачала</expression>
 	</parameter>
@@ -109,11 +108,12 @@
 				<v8:DateFractions>DateTime</v8:DateFractions>
 			</v8:DateQualifiers>
 		</valueType>
+		<value xsi:nil="true"/>
 		<useRestriction>true</useRestriction>
 		<expression>&amp;Период.ДатаОкончания</expression>
 	</parameter>
 	<parameter>
-		<name>Период	</name>
+		<name>Период</name>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
@@ -123,7 +123,11 @@
 		<valueType>
 			<v8:Type>v8:StandardPeriod</v8:Type>
 		</valueType>
-		<value xsi:nil="true"/>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
 		<useRestriction>false</useRestriction>
 	</parameter>
 	<settingsVariant>
@@ -156,18 +160,30 @@
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>НачалоПериода</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:Field"/>
 					<dcsset:userSettingID>b48a3206-9e12-44e0-8140-ddf8e407d458</dcsset:userSettingID>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>КонецПериода</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
 					<dcsset:userSettingID>9693e73a-6f5a-4cdc-8453-3ad03d3be50a</dcsset:userSettingID>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>[Период	]</dcscor:parameter>
-					<dcscor:value xsi:nil="true"/>
-					<dcsset:userSettingID>e6c37b2d-659f-4db1-a050-b634399db7d7</dcsset:userSettingID>
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:userSettingID>67cdc1fb-5750-43a5-b6a1-34069714f9df</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemTable">

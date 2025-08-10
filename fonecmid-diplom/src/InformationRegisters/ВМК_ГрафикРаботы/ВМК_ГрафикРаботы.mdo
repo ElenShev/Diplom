@@ -16,7 +16,6 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
-  <mainFilterOnPeriod>true</mainFilterOnPeriod>
   <dataLockControlMode>Managed</dataLockControlMode>
   <resources uuid="a7b884a8-8990-46e9-a4ee-73b7617e8cfb">
     <name>Значение</name>

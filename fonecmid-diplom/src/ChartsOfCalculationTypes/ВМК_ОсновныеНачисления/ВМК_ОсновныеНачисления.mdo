@@ -43,15 +43,6 @@
         <value>1</value>
       </code>
     </items>
-    <items id="06575db3-28fc-4c7f-9eff-f121efc8c739">
-      <name>ПремияПроцент</name>
-      <description>Премия процент</description>
-      <code xsi:type="core:StringValue">
-        <value>2</value>
-      </code>
-      <base>ChartOfCalculationTypes.ВМК_ОсновныеНачисления.Оклад</base>
-      <leading>ChartOfCalculationTypes.ВМК_ОсновныеНачисления.Оклад</leading>
-    </items>
     <items id="b5ec4d07-e336-4fdd-a36d-bffebdb2c497">
       <name>Отпуск</name>
       <description>Отпуск</description>
@@ -64,6 +55,15 @@
       <leading>ChartOfCalculationTypes.ВМК_ОсновныеНачисления.ПремияПроцент</leading>
       <leading>ChartOfCalculationTypes.ВМК_ОсновныеНачисления.Оклад</leading>
       <leading>ChartOfCalculationTypes.ВМК_ДополнительныеНачисления.ПремияФикс</leading>
+    </items>
+    <items id="06575db3-28fc-4c7f-9eff-f121efc8c739">
+      <name>ПремияПроцент</name>
+      <description>Премия процент</description>
+      <code xsi:type="core:StringValue">
+        <value>2</value>
+      </code>
+      <base>ChartOfCalculationTypes.ВМК_ОсновныеНачисления.Оклад</base>
+      <leading>ChartOfCalculationTypes.ВМК_ОсновныеНачисления.Оклад</leading>
     </items>
   </predefined>
 </mdclass:ChartOfCalculationTypes>

@@ -7,7 +7,6 @@
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
-  <content>Catalog.ДополнительныеОтчетыИОбработки</content>
   <content>Enum.ВМК_ВидОтпуска</content>
   <content>Role.ВМК_ОтчетВыработкаСпециалистов</content>
   <content>Role.ВМК_ОтчетПоАнализуАктов</content>

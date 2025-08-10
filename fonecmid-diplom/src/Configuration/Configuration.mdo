@@ -632,6 +632,7 @@
   <roles>Role.ВМК_ОтчетВыработкаСпециалистов</roles>
   <roles>Role.ВМК_ОтчетПоАнализуАктов</roles>
   <roles>Role.ВМК_ОтчетыПоЗарплатеОтпускам</roles>
+  <roles>Role.ВМК_РаботаСОбслуживаниемКлиентовСпециалист</roles>
   <commonTemplates>CommonTemplate.ДанныеПечатиОбщиеРеквизиты</commonTemplates>
   <commonTemplates>CommonTemplate.ДанныеПечатиРегистрСимволов</commonTemplates>
   <commonTemplates>CommonTemplate.ИнструкцияКакВыполнитьНастройкуМакетаOfficeOpen</commonTemplates>
