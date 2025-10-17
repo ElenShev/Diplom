@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c41b8f99-5863-4f90-94f6-d60acd5ff5d2">
+  <producedTypes>
+    <selectionType typeId="e4a1b637-04d0-40b3-a781-e4271ba6bed9" valueTypeId="8d2428b0-6b5a-4a09-ba72-f0fb62e540c7"/>
+    <listType typeId="25b4ecdf-cfa2-42d7-a847-82201cf821e2" valueTypeId="7cfec778-dce9-4b33-8dac-2b0a77843673"/>
+    <managerType typeId="f4e9df0d-bfc1-4c59-b015-07eacc5a9332" valueTypeId="2ece93f9-001e-4bf5-9ff2-f541964ac06d"/>
+    <recordSetType typeId="52fa0921-fbb0-43ab-b448-24a8749fdbaa" valueTypeId="975ec7ab-5e14-4132-8924-34dd44383966"/>
+    <recordKeyType typeId="875161ca-e79d-4044-abf1-6f57ea7c0d19" valueTypeId="be49b3c1-7cb2-4971-8655-32e599ad1c2f"/>
+    <recordType typeId="973945bf-fe90-4742-9640-912546992cf8" valueTypeId="0de3c79f-535b-4985-93b8-77d1f3a277a4"/>
+    <recordManagerType typeId="19a0c34b-4982-4edd-8c77-348b1ff827b6" valueTypeId="4dead833-a340-4939-bd1d-1e98a9fd01f1"/>
+  </producedTypes>
+  <name>ВМК_Отпуска</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отпуска</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Year</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="5d9f445e-e96f-4bbb-b2fa-61f74d68dfd3">
+    <name>КоличествоДней</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество дней</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9f03f80d-ce36-4e40-b460-898d59d3d10f">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5a0fd9e5-6ce5-4824-aee3-0bcf1988555b">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f8b52a5a-6b68-4bb6-b6b7-d184ea6da334">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВМК_ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3dc306c8-4c80-496b-b59a-485f6ed8992a">
+    <name>ВидОтпуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид отпуска</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВМК_ВидОтпуска</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -10,6 +10,10 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.ИконкаНетология</picture>
   </picture>
+  <content>Role.ВМК_ОтчетВыработкаСпециалистов</content>
+  <content>Role.ВМК_ОтчетПоАнализуАктов</content>
+  <content>DataProcessor.ВМК_МассовоеСозданиеАктов</content>
   <subsystems>Справочники</subsystems>
   <subsystems>Операции</subsystems>
+  <subsystems>ВМК_ДополнительныеОтчетыИОбработки</subsystems>
 </mdclass:Subsystem>

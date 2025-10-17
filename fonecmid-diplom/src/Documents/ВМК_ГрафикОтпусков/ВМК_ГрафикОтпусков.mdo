@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="057c9d72-1b5c-4dcd-b39f-26bf056f98bf">
+  <producedTypes>
+    <objectType typeId="5a6b017a-a47f-4581-84bf-bc655c9c4e63" valueTypeId="f55d4771-4b7b-4347-8449-b28905fdb140"/>
+    <refType typeId="38f4b2b6-fdf6-4e4f-899c-eb59f8e1e0fe" valueTypeId="f1ee021a-9e26-4259-98a7-7cf1c81bb4b2"/>
+    <selectionType typeId="413455ad-8164-4d60-8f13-c79e4e52612f" valueTypeId="eafa6d72-5f50-4b70-a18a-757fea03cb50"/>
+    <listType typeId="f6b446dc-c43f-4353-b976-398eeb8b5ede" valueTypeId="efa67ec1-75e7-407e-9179-943470d0a34d"/>
+    <managerType typeId="75004597-265e-4c04-847b-ce39323fd6da" valueTypeId="39f86bac-9565-477b-8993-5f666f8863c8"/>
+  </producedTypes>
+  <name>ВМК_ГрафикОтпусков</name>
+  <synonym>
+    <key>ru</key>
+    <value>График отпусков</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВМК_ГрафикОтпусков.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВМК_ГрафикОтпусков.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="9143651c-8183-4b4a-9a39-60c846c33c9e">
+    <name>Год</name>
+    <synonym>
+      <key>ru</key>
+      <value>Год</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ДФ=гггг</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ=гггг</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="d7a2c8b5-ef15-409d-a34a-17737ff6cdf3">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f1621617-22ba-410a-98f3-2875acee2f70">
+    <name>АнализГрафика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Анализ графика</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="c729b9ee-596d-41b5-bbca-127e75b12553">
+    <producedTypes>
+      <objectType typeId="b93845c5-7209-4912-b6ac-3d47214d53e6" valueTypeId="65844c92-e0c7-4e65-892b-0f32442df667"/>
+      <rowType typeId="bf4b1309-a096-4716-b30f-e9a384f9c04e" valueTypeId="fd038e34-bdd5-4e9a-846c-202e5b42b10b"/>
+    </producedTypes>
+    <name>ГрафикОтпусков</name>
+    <synonym>
+      <key>ru</key>
+      <value>График отпусков</value>
+    </synonym>
+    <attributes uuid="5c308c18-b475-4845-ab8f-bec11f36a695">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВМК_ФизическиеЛица</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="eb649c76-1224-4dd0-b97f-1e634f6b3370">
+      <name>ДатаНачала</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата начала</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="04069f0e-1137-4fef-a251-39e3c9032975">
+      <name>ДатаОкончания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата окончания</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c527a87e-4966-467f-b88e-9f15c0b9c17e">
+  <name>ВКМ_ОбслуживаниеКлиентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обслуживание клиентов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Report.ИспользуемыеВнешниеРесурсы</content>
+  <content>Role.ВМК_ОтчетВыработкаСпециалистов</content>
+  <content>Role.ВМК_ОтчетПоАнализуАктов</content>
+  <content>DataProcessor.ВМК_МассовоеСозданиеАктов</content>
+  <subsystems>ВМК_Документы</subsystems>
+  <subsystems>ВМК_Справочники</subsystems>
+  <subsystems>ВМК_ОтчетыИОбработки</subsystems>
+</mdclass:Subsystem>

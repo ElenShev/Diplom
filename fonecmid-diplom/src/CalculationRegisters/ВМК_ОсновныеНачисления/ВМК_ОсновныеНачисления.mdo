@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7f7ec848-5414-4fa6-ab69-d29c5c8b4374">
+  <producedTypes>
+    <selectionType typeId="e8a01a2d-9063-4ff7-90ca-b8799ec104ff" valueTypeId="5e39f410-b4a0-42d7-b9c2-c8c86d94b63e"/>
+    <listType typeId="01408429-8f27-48e9-ad6f-cfb7144f2997" valueTypeId="291389ea-7e23-4821-a1ec-ba9f1591ec3d"/>
+    <managerType typeId="29a221b9-91a2-4272-833f-514d2f5e2fae" valueTypeId="653e7c5c-2aa5-4f09-95ca-d3cc7f25f7e6"/>
+    <recordSetType typeId="c87de1af-4842-4611-bdb3-4ed41dc762f8" valueTypeId="e1fe1e39-0c08-40b0-8e6a-4dfebe807a48"/>
+    <recordKeyType typeId="604bb480-002c-41b3-b4a7-f420e37440ad" valueTypeId="4f35c580-6fb1-4510-ad37-4122b9a9d702"/>
+    <recordType typeId="3754c805-00f0-4fd4-b647-5bf142fc92db" valueTypeId="99e1e58b-f43e-4cdd-8aeb-76e1b32d502e"/>
+    <recalcsType typeId="5efeb8f4-322f-4483-89ad-e17d0bcbcda5" valueTypeId="18017274-510e-4b95-acb9-a0de967eac42"/>
+  </producedTypes>
+  <name>ВМК_ОсновныеНачисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основные начисления</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <periodicity>Month</periodicity>
+  <actionPeriod>true</actionPeriod>
+  <basePeriod>true</basePeriod>
+  <schedule>InformationRegister.ВМК_ГрафикРаботы</schedule>
+  <scheduleValue>InformationRegister.ВМК_ГрафикРаботы.Resource.Значение</scheduleValue>
+  <scheduleDate>InformationRegister.ВМК_ГрафикРаботы.Dimension.Дата</scheduleDate>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.ВМК_ОсновныеНачисления</chartOfCalculationTypes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4eaf3891-a1c8-412e-9666-1391e8eb08e8">
+    <name>Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="3fd3067a-590b-4761-9937-6c13a98fe0f1">
+    <name>Размер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размер</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="5ccb2329-3479-4fae-a35e-86c747fabb49">
+    <name>Процент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="b85a8150-3056-408b-9d79-a98649ad7b8c">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВМК_ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="b1ebf68f-85fe-49c8-8a52-c33ed4acc0a1">
+    <name>Специализация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Специализация</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВМК_СпециализацияСотрудников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+</mdclass:CalculationRegister>
